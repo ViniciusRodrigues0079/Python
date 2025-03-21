@@ -93,12 +93,3 @@
 #            print ("Estado atual: Desligado.")
 #
 #carro1 = Carro("BMW 320i", 2023, "Azul escuro", 70, 0)
-#carro1.ligar()
-#carro1.acelerar()
-#carro1.acelerar()
-#carro1.buzinar()
-#carro1.abastecer()
-#carro1.frear()
-#carro1.status()
-#carro1.frear()
-#carro1.desligar()
