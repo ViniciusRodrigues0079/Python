@@ -19,7 +19,11 @@ class Conta:
     def get_saldo (self):
         return print (f"Seu saldo: R${round(self.__saldo, 2)}")
     def set_limite (self):
-        self.__limite = float(input ("Digite o novo limite de crédito da conta corrente: "))
+        nl = float(input("Digite o novo limite de crédito da conta corrente: "))
+        if nl <= 0:
+            print ("O limite de crédito não pode ser negativo.")
+        else:
+            self.__limite = nl
     def get_limite (self):
         return print (f"Seu limite de crédito: R${round(self.__limite, 2)}")
 conta1 = Conta("Rogério", 7500.00, 5000.00)
